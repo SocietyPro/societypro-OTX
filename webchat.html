@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <title>WebSocket Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/demo-chat.css">
+  <link rel="stylesheet" href="/assets/demo-chat.css">
+  <link rel="stylesheet" href="/assets/angular-layout.css">
 
 <script language="javascript" type="text/javascript">
 
@@ -55,8 +56,11 @@
 </script>
 </head>
 <body layout-fill>
-  <img id="helpButton" src="assets/ic_info_24px.svg"/>
+  <img id="helpButton" src="/assets/ic_info_24px.svg"/>
   <div layout="vertical" flex layout-padding layout-fill>
+    <div layout="horizontal">
+      <h1>WebSocket Chat for SOAPI integration </h1>
+    </div>
     <p id="help-dialog" class="hidden">
       This page demonstrates how Mongoose web server could be used to implement
       <a href="http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">
@@ -66,10 +70,7 @@
       connection with Mongoose, making each browser window a websocket client.
       Join a room, send messages, and see messages sent by other clients.
     </p>
-    <div layout="horizontal">
-      <h1 flex="50">WebSocket Chat for SOAPI integration </h1>
-    </div>
-    <div id="messages" layout="vertical" flex>
+    <div id="messages" flex>
     </div>
     <div layout="horizontal" layout-padding id="control-container">
       <div layout="vertical" flex="80">
